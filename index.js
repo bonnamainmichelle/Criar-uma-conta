@@ -50,8 +50,9 @@ function checkInputs() {
 
   const formControls = form.querySelectorAll('.form-control');
 
+  //pra cada form-control verificar se tem uma classe de sucesso.
   const formIsValid = [...formControls].every((formControl) => {
-    return formControl.className === 'form-control success';
+    return formControl.className === 'form-control success'; 
   });
 
   if (formIsValid) {
